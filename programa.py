@@ -41,9 +41,7 @@ for nome_navio, tamanho, quantidade in navios:
             print("Esta posição não está válida!")
 
         posicoes = define_posicoes(linha, coluna, orientacao, tamanho)
-        frota = preenche_frota(
-            frota, nome_navio, linha, coluna, orientacao, tamanho
-        )
+        frota = preenche_frota(frota, nome_navio, linha, coluna, orientacao, tamanho)
 
 print(frota)
         )
