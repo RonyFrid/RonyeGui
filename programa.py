@@ -1,3 +1,20 @@
+frota = {
+    "porta-aviões": [],
+    "navio-tanque": [],
+    "contratorpedeiro": [],
+    "submarino": []
+}
+
+navios = [
+    ("porta-aviões", 4, 1),
+    ("navio-tanque", 3, 2),
+    ("contratorpedeiro", 2, 3),
+    ("submarino", 1, 4)
+]
+
+
+
+
 for nome_navio, tamanho, quantidade in navios:
     print(f"Insira as informações referentes ao navio {nome_navio} que possui tamanho {tamanho}")
 
@@ -27,3 +44,4 @@ for nome_navio, tamanho, quantidade in navios:
         )
 
 print(frota)
+

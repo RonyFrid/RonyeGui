@@ -48,17 +48,5 @@ def posicao_valida(frota, linha, coluna, orientacao, tamanho):
     return True
 
 
-frota = {
-    "porta-aviões": [],
-    "navio-tanque": [],
-    "contratorpedeiro": [],
-    "submarino": []
-}
 
-navios = [
-    ("porta-aviões", 4, 1),
-    ("navio-tanque", 3, 2),
-    ("contratorpedeiro", 2, 3),
-    ("submarino", 1, 4)
-]
 
