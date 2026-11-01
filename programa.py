@@ -84,7 +84,11 @@ tabuleiro_oponente = posiciona_frota(frota_oponente)
 
 posicoes_informadas = []
 jogando = True
-total_navios = sum(len(embarcacoes) for embarcacoes in frota_oponente.values())
+
+total_navios = 0
+
+for embarcacoes in frota_oponente.values():
+    total_navios += len(embarcacoes)
 
 while jogando:
     print(monta_tabuleiros(tabuleiro_jogador, tabuleiro_oponente))
@@ -112,8 +116,10 @@ while jogando:
             break
 
     posicoes_informadas.append([linha, coluna])
+
     tabuleiro_oponente = faz_jogada(tabuleiro_oponente, linha, coluna)
 
     if afundados(frota_oponente, tabuleiro_oponente) == total_navios:
         print('Parabéns! Você derrubou todos os navios do seu oponente!')
         jogando = False
+
