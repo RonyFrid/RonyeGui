@@ -1,3 +1,5 @@
+from funcoes import define_posicoes, posicao_valida, preenche_frota
+
 frota = {
     "porta-aviões": [],
     "navio-tanque": [],
