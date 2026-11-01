@@ -14,13 +14,13 @@ navios = [
     ("submarino", 1, 4)
 ]
 
-
-
-
 for nome_navio, tamanho, quantidade in navios:
     for i in range(quantidade):
         while True:
-            print(f"Insira as informações referentes ao navio {nome_navio} que possui tamanho {tamanho}")
+            print(
+                f"Insira as informações referentes ao navio {nome_navio} "
+                f"que possui tamanho {tamanho}"
+            )
 
             linha = int(input())
             coluna = int(input())
@@ -40,6 +40,10 @@ for nome_navio, tamanho, quantidade in navios:
 
             print("Esta posição não está válida!")
 
+        posicoes = define_posicoes(linha, coluna, orientacao, tamanho)
         frota = preenche_frota(
             frota, nome_navio, linha, coluna, orientacao, tamanho
+        )
+
+print(frota)
         )
