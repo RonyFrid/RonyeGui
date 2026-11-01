@@ -4,8 +4,7 @@ from funcoes import define_posicoes, posicao_valida, preenche_frota, posiciona_f
 def monta_tabuleiros(tabuleiro_jogador, tabuleiro_oponente):
     texto = ''
     texto += '   0  1  2  3  4  5  6  7  8  9         0  1  2  3  4  5  6  7  8  9\n'
-    texto += '__________________________________      __________________________________\n'
-
+    texto += '_______________________________      _______________________________\n'
     for linha in range(len(tabuleiro_jogador)):
         jogador_info = '  '.join([str(item) for item in tabuleiro_jogador[linha]])
         oponente_info = '  '.join([
